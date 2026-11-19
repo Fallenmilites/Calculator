@@ -1,5 +1,3 @@
-#Calcolatrice n1, n2, +,-,*,/,radiceQuadrata,potenza 
-# funzioni goniometriche
 import math
 def start():
     operation= input("Quale operazione vuoi fare (+,-,*,/,radiceQuadrata,potenza,fattoriale)?  ")
@@ -24,9 +22,8 @@ def start():
 
     # ^^ tipologie di operazioni ^^
 
-def restart(check):
-    if check == True :
-        return calculator()
+def restart():
+    return start()
 
 def calculator(n1,n2,operation):
     #@param operation: str
@@ -66,8 +63,7 @@ def calculator(n1,n2,operation):
 
     again = input("Vuoi calcolare altro (y/n)?  ")
     if again == "y" :
-        check = True
-        restart(check)
+        restart()
     #^^conclusione e riavvio ^^
     return
 
